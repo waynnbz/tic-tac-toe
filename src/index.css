@@ -1,11 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
+body {
+  align-items: center;
+  background-color: #1f3a93;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #1f3a93;
+  border-radius: 1rem;
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); */
+}
+
+.board {
+  /* border: 1rem solid teal; */
+  border-style: hidden;
+  border-radius: 1rem;
+  background: #fafafa;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.square {
+  /* border-radius: 1rem; */
+  background: #1f3a93;
+  border: none;
+  font-size: 8rem;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.reset {
+  background: #fafafa;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+}
+
+.undo {
+  background: #fafafa;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+  margin-top: 3rem;
+}
+
+.X {
+  color: #36dbd7;
+  font-weight: bolder;
+}
+
+.O {
+  color: #f62459;
+  font-weight: bolder;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

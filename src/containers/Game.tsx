@@ -55,7 +55,7 @@ const Game: FC = () => {
     }
   };
 
-  // check if wins
+  // check if current board ends
   useEffect(() => {
     const winner = getWinner(history[stepCount]);
     if (winner !== 0) {

@@ -41,7 +41,7 @@ body {
 
 .square {
   /* border-radius: 1rem; */
-  background: #1f3a93;
+  background: red;
   border: none;
   font-size: 8rem;
   /* font-weight: 800; */
